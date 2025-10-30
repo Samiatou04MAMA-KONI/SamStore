@@ -1,0 +1,498 @@
+.service-client-page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.service-client-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.service-client-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-nav {
+  background: white;
+  padding: 20px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.service-nav-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service-nav-buttons button {
+  padding: 12px 24px;
+  border: 2px solid #e2e8f0;
+  background: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.service-nav-buttons button.active,
+.service-nav-buttons button:hover {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+/* Sections */
+.contact-section,
+.faq-section,
+.guides-section,
+.reclamation-section {
+  padding: 60px 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.contact-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #5a6fd8;
+}
+
+/* FAQ */
+.faq-grid {
+  display: grid;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.faq-category {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+/* Guides */
+.guides-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.guide-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.guide-btn {
+  background: #059669;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* Réclamation */
+.reclamation-form {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 40px auto 0;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Aide immédiate */
+.immediate-help {
+  padding: 40px 0;
+  background: white;
+}
+
+.help-banner {
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 15px;
+}
+
+.chatbot-btn {
+  background: white;
+  color: #667eea;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+/* ===== THÈME SOMBRE - SERVICE CLIENT ===== */
+
+[data-theme="dark"] .service-client-page {
+  background: #1a202c;
+  color: #e2e8f0;
+}
+
+/* Hero Section */
+[data-theme="dark"] .service-client-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+[data-theme="dark"] .service-client-hero h1 {
+  color: white;
+}
+
+[data-theme="dark"] .service-client-hero p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Navigation */
+[data-theme="dark"] .service-nav {
+  background: #2d3748;
+  border-bottom-color: #4a5568;
+}
+
+[data-theme="dark"] .service-nav-buttons button {
+  background: #2d3748;
+  border-color: #4a5568;
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .service-nav-buttons button.active,
+[data-theme="dark"] .service-nav-buttons button:hover {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+/* Sections générales */
+[data-theme="dark"] .contact-section,
+[data-theme="dark"] .faq-section,
+[data-theme="dark"] .guides-section,
+[data-theme="dark"] .reclamation-section {
+  background: #1a202c;
+}
+
+[data-theme="dark"] .section-title {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .section-subtitle {
+  color: #a0aec0;
+}
+
+/* Cartes de contact */
+[data-theme="dark"] .contact-card {
+  background: #2d3748;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid #4a5568;
+}
+
+[data-theme="dark"] .contact-card h3 {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .contact-card p {
+  color: #a0aec0;
+}
+
+[data-theme="dark"] .contact-btn {
+  background: #667eea;
+  color: white;
+}
+
+[data-theme="dark"] .contact-btn:hover {
+  background: #5a67d8;
+}
+
+/* FAQ */
+[data-theme="dark"] .faq-category {
+  background: #2d3748;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid #4a5568;
+}
+
+[data-theme="dark"] .faq-category h3 {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .faq-item {
+  border-bottom-color: #4a5568;
+}
+
+[data-theme="dark"] .faq-question {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .faq-answer {
+  color: #a0aec0;
+}
+
+/* Guides */
+[data-theme="dark"] .guide-card {
+  background: #2d3748;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid #4a5568;
+}
+
+[data-theme="dark"] .guide-card h3 {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .guide-card p {
+  color: #a0aec0;
+}
+
+[data-theme="dark"] .guide-btn {
+  background: #059669;
+  color: white;
+}
+
+[data-theme="dark"] .guide-btn:hover {
+  background: #047857;
+}
+
+/* Formulaire de réclamation */
+[data-theme="dark"] .reclamation-form {
+  background: #2d3748;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid #4a5568;
+}
+
+[data-theme="dark"] .form-group label {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group select,
+[data-theme="dark"] .form-group textarea {
+  background: #2d3748;
+  border-color: #4a5568;
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .form-group input:focus,
+[data-theme="dark"] .form-group select:focus,
+[data-theme="dark"] .form-group textarea:focus {
+  border-color: #667eea;
+  background: #2d3748;
+}
+
+[data-theme="dark"] .form-group input::placeholder,
+[data-theme="dark"] .form-group textarea::placeholder {
+  color: #a0aec0;
+}
+
+[data-theme="dark"] .submit-btn {
+  background: #dc2626;
+  color: white;
+}
+
+[data-theme="dark"] .submit-btn:hover {
+  background: #b91c1c;
+}
+
+/* Aide immédiate */
+[data-theme="dark"] .immediate-help {
+  background: #2d3748;
+}
+
+[data-theme="dark"] .help-banner {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+[data-theme="dark"] .chatbot-btn {
+  background: white;
+  color: #667eea;
+}
+
+[data-theme="dark"] .chatbot-btn:hover {
+  background: #f7fafc;
+  transform: translateY(-2px);
+}
+
+/* Icônes */
+[data-theme="dark"] .contact-icon {
+  color: #667eea;
+}
+
+/* États de formulaire */
+[data-theme="dark"] .form-group input:invalid,
+[data-theme="dark"] .form-group textarea:invalid {
+  border-color: #fc8181;
+}
+
+[data-theme="dark"] .form-group input:valid,
+[data-theme="dark"] .form-group textarea:valid {
+  border-color: #68d391;
+}
+
+/* Messages d'état */
+[data-theme="dark"] .success-message {
+  background: rgba(72, 187, 120, 0.1);
+  color: #68d391;
+  border: 1px solid rgba(72, 187, 120, 0.3);
+}
+
+[data-theme="dark"] .error-message {
+  background: rgba(239, 68, 68, 0.1);
+  color: #fc8181;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+[data-theme="dark"] .info-message {
+  background: rgba(66, 153, 225, 0.1);
+  color: #63b3ed;
+  border: 1px solid rgba(66, 153, 225, 0.3);
+}
+
+/* Scrollbar */
+[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: #2d3748;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: #667eea;
+}
+
+/* Assurer la cohérence avec le body */
+[data-theme="dark"] body {
+  background: #1a202c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  [data-theme="dark"] .service-nav-buttons {
+    background: #2d3748;
+  }
+  
+  [data-theme="dark"] .contact-grid,
+  [data-theme="dark"] .guides-grid {
+    background: #1a202c;
+  }
+}
+
+/* Animations préservées */
+[data-theme="dark"] .contact-card:hover,
+[data-theme="dark"] .guide-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Styles pour les éléments interactifs FAQ */
+[data-theme="dark"] .faq-question {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+[data-theme="dark"] .faq-question:hover {
+  color: #667eea;
+}
+
+/* Sélecteurs de formulaire */
+[data-theme="dark"] .form-group select option {
+  background: #2d3748;
+  color: #e2e8f0;
+}
+
+/* Boutons de navigation supplémentaires */
+[data-theme="dark"] .back-to-top {
+  background: #667eea;
+  color: white;
+  border: none;
+}
+
+[data-theme="dark"] .back-to-top:hover {
+  background: #5a67d8;
+}
+
+/* États de chargement */
+[data-theme="dark"] .loading-spinner {
+  border-color: #4a5568;
+  border-top-color: #667eea;
+}
