@@ -2,7 +2,7 @@
 
 /* ===== RECHERCHE ET DROPDOWN ===== */
 .navbar__search {
-  position: relative;
+  position: fixed;
   flex: 0 1 600px;
   max-width: 600px;
   height: 45px;
